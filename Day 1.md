@@ -24,3 +24,27 @@ HTTP is the foundation of communication between web servers and clients. It is *
 | **JWT (JSON Web Tokens)** | Token-based authentication. |
 
 ---
+
+## **2. HTTPS (Hypertext Transfer Protocol Secure)**
+
+HTTPS = **HTTP + Security (SSL/TLS encryption)**
+
+| Feature | Benefit |
+| --- | --- |
+| **Encryption (SSL/TLS)** | Protects data from eavesdropping. |
+| **Data Integrity** | Prevents modification of data in transit. |
+| **Authentication** | Verifies website identity using SSL certificates. |
+
+---
+
+## **3. AJAX (Asynchronous JavaScript and XML)**
+
+AJAX allows web pages to fetch/send data **without reloading** the page.
+
+### **How AJAX Works**
+
+1. JavaScript makes an **HTTP request** (GET/POST) to a server.
+2. The server processes the request and responds with data (usually JSON/XML).
+3. JavaScript updates the webpage **without a full refresh**.
+
+---
