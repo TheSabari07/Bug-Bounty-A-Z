@@ -46,7 +46,7 @@ Burp Suite is a security testing platform developed by PortSwigger. It provides 
 
 ##  Learning Resources
 - **[TryHackMe - Burp Suite Labs](https://tryhackme.com/room/burpsuitebasics)**
-- **[PortSwigger - Official Burp Suite Guide](https://portswigger.net/burp/documentation)**
+- **[PortSwigger - Official Burp Suite Guide](https://portswigger.net/burp/documentation/desktop/getting-started)**
 
 Burp Suite is a powerful tool that every security researcher should master for effective web application security testing!
 
