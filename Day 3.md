@@ -71,6 +71,28 @@ If the website does not properly handle user input, the script will execute in t
 
 ---
 
+
+### Stored XSS
+
+Stored XSS (Persistent XSS) occurs when malicious scripts are permanently stored on a target server and served to users who access the affected page.
+
+---
+**Entry Points** (Where malicious input is injected):
+- Comment sections
+- User profile fields
+- Forum posts
+- Blog entries
+- Message boards
+
+**Exit Points** (Where the malicious script executes):
+- A web page displaying stored content
+- A profile page showing user details
+- A forum post or blog entry with injected scripts
+- Any place where stored input is dynamically rendered in the browser
+---
+
+
+
 ## Conclusion
 Reflected XSS is a serious vulnerability that can lead to session hijacking, data theft, and other attacks. Proper input validation, escaping output, and implementing Content Security Policy (CSP) are necessary to prevent XSS vulnerabilities.
 
