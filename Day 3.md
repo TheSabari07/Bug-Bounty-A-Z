@@ -104,7 +104,20 @@ DOM-Based XSS occurs when the vulnerability exists within the client-side JavaSc
 
 ---
 
+### Prevention Techniques
 
+#### General Mitigations:
+- Input validation (sanitize user inputs)
+- Output encoding (escape special characters)
+- Content Security Policy (CSP) to limit script execution
+- Using security libraries (e.g., DOMPurify for safe HTML rendering)
+
+#### Specific to DOM-Based XSS:
+- Avoid `innerHTML`, use `textContent` or `createElement`
+- Use `strict mode` in JavaScript
+- Properly handle and sanitize dynamic JavaScript inputs
+
+---
 
 ## Conclusion
 Reflected XSS is a serious vulnerability that can lead to session hijacking, data theft, and other attacks. Proper input validation, escaping output, and implementing Content Security Policy (CSP) are necessary to prevent XSS vulnerabilities.
