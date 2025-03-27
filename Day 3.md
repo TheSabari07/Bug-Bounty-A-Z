@@ -91,6 +91,19 @@ Stored XSS (Persistent XSS) occurs when malicious scripts are permanently stored
 - Any place where stored input is dynamically rendered in the browser
 ---
 
+### DOM-Based XSS
+
+DOM-Based XSS occurs when the vulnerability exists within the client-side JavaScript execution and does not involve direct server interaction.
+
+| **Aspect**        | **Stored XSS**                      | **DOM-Based XSS**                 |
+|------------------|--------------------------------|---------------------------------|
+| Execution Point  | Server-side stored content     | Client-side JavaScript execution |
+| Data Flow       | Injected into database, retrieved, and executed | Modified directly in the DOM by JavaScript |
+| Common Sources  | User input stored in the database | `document.URL`, `document.referrer`, `window.location` |
+| Mitigation      | Input validation, output encoding, Content Security Policy (CSP) | Proper JavaScript handling, avoiding direct `innerHTML`, using safer APIs like `textContent` |
+
+---
+
 
 
 ## Conclusion
