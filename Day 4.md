@@ -96,3 +96,22 @@ Without encoding, user input could be interpreted as code instead of text.
 If not encoded, this will execute JavaScript. Encoding it as `&lt;script&gt;alert(1)&lt;/script&gt;` prevents execution.
 
 ---
+
+## XSS in HTML Tag Attributes
+
+Attackers can inject malicious scripts inside HTML attributes such as `onerror`, `onmouseover`, or `href`.
+
+### Example:
+```html
+<img src="invalid.jpg" onerror="alert('XSS')">
+```
+Here, when the image fails to load, the script executes.
+
+### Mitigation:
+- Use **Content Security Policy (CSP)**.
+- Validate and sanitize input.
+- Avoid `innerHTML` when inserting user data.
+
+---
+
+```
